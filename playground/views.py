@@ -4,4 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 def say_hellow(request):
     print("hellow hellow ")
-    return HttpResponse('Hellow Jay !')
+    return render(request,'hello.html',{'name':'Joseph Ridge'})
